@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h3>Addition</h3>
+        Number 1:
+        <input type="number" name="" id="n1"><br><br>
+        Number 2:
+        <input type="number" name="" id="n2"><br><br>
+        <input type="button" value="Add" onclick="addarrow()">
+    
+        <p id="r"></p>
+
+        <script>
+            let 
+             addarrow=()=>   //arrow function
+            {
+                x=document.getElementById("n1").value;
+                y=document.getElementById("n2").value;
+                x=Number.parseInt(x);
+                y=Number.parseInt(y);
+                z=x+y;
+                return z;
+                
+                // document.getElementById("r").innerHTML="Result :"+z;
+                
+
+            }
+            document.getElementById("r").innerHTML="Result :"+addarrow;
+
+        </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        Name :
+        <input type="text" name="" id="nm"><br><br>
+        Age :
+        <input type="text" name="" id="ag"><br><br>
+        Email :
+        <input type="email" name="" id="em"><br><br>
+        Dob :
+        <input type="date" name="" id="db"><br><br>
+        <input type="submit" value="Submit" onclick="Details()">
+        <h3>Your Details</h3>
+
+        <h4 id="details"></h4>
+
+
+        <script>
+            function Details()
+            {
+            nm=document.getElementById('nm').value;
+            age=document.getElementById('ag').value;
+            email=document.getElementById('em').value;
+            dob=document.getElementById('db').value;
+
+            document.getElementById('details').innerHTML=nm+"<br><br>"+age+"<br><br>"+email+"<br><br>"+dob;
+            }
+
+        </script>
+
+
+</body>
+</html>
